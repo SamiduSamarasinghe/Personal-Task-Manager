@@ -29,22 +29,6 @@ Practice clean service-repository architecture
 
 Apply DTOs, custom exceptions, and unit testing
 
-🏗️ Project Structure
-task-manager/
-├── src/
-│   ├── main/
-│   │   ├── java/com/taskmanager/
-│   │   │   ├── controller/
-│   │   │   ├── service/
-│   │   │   ├── repository/
-│   │   │   ├── model/
-│   │   │   ├── dto/
-│   │   │   └── exception/
-│   │   └── resources/
-│   │       ├── application.properties
-│   │       └── data.sql
-├── pom.xml
-└── README.md
 
 ⚙️ Tech Stack
 Component	Technology
@@ -54,20 +38,30 @@ Build Tool	Maven
 Language	Java 17 / 21
 Testing	JUnit 5, Mockito
 Documentation	Swagger / OpenAPI
+
 📡 API Endpoints
 Task Management
 Method	Endpoint	Description
-GET	/api/tasks	Get all tasks
-GET	/api/tasks/{id}	Get task by ID
-POST	/api/tasks	Create a new task
-PUT	/api/tasks/{id}	Update task
-DELETE	/api/tasks/{id}	Delete task
-GET	/api/tasks/status/{status}	Get tasks by status
+GET: /api/tasks	Get all tasks.
+
+GET: /api/tasks/{id} Get task by ID.
+
+POST:	/api/tasks	Create a new task.
+
+PUT:	/api/tasks/{id}	Update task.
+
+DELETE:	/api/tasks/{id}	Delete task.
+
+GET:	/api/tasks/status/{status}	Get tasks by status.
+
 User Management
 Method	Endpoint	Description
 GET	/api/users	Get all users
+
 POST	/api/users	Create new user
+
 GET	/api/users/{id}/tasks	Get user’s tasks
+
 🧪 Testing
 
 Unit tests for service layer using JUnit 5 and Mockito
